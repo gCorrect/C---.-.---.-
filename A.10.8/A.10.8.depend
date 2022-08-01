@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1488488553 source:/home/n/Desktop/BACKUP/prog1/apo_th_theoria_sthn_efarmogh/A.10.8/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

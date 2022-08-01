@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int *find_part(char str1[],char str2[],char *p1_max,char *p2_max);
+
+int main()
+{
+    char *p1,*p2,a[100],b[100],*point;
+
+    gets(a);
+    gets(b);
+    point=find_part(a,b,*p1,*p2);
+    if (point==NULL)
+        printf("no such part...");
+    else
+        printf("part start at %c",*point);
+}
+
+int *find_part(char a[],char b[],char *p1_max,char *p2_max)
+{
+    int *p1,*p2,i,j,len1,len2,flag_p1=0,same,max=0;
+
+    len1=strlen(a);
+    len2=strlen(b);
+    for (i=0; i<len1;i++)
+    {
+        same=0;
+        for(j=0;j<len2;j++)
+        {
+            if (a[i]==b[j])
+                same==1;
+            break;
+        }
+        if (same==1)
+            {
+                flag_p1=0;
+                continue;
+            }
+        else
+            {
+                if (flag_p1==0)
+                {
+                    p1=a+i;
+                }
+                else
+                {
+                    p2=a+i;
+                }
+            }
+        if (p2-p1>max)
+        {
+            max=p2-p1;
+            p1_max=p1;
+            p2_max=p2;
+        }
+    }
+    if (max==0)
+        return NULL;
+    else return p1_max;
+}
+
