@@ -3,12 +3,12 @@
 
 int main()
 {
-    float katathesh,epitokio;
-    printf("dose katathesh ");
-    scanf("%f",&katathesh);
-    printf("dose epitokio %");
-    scanf("%f",&epitokio);
-    epitokio/=100;
-    printf("meta apo ena xrono to poso einai: %.2f\n",katathesh+katathesh*epitokio*12);
+    float deposit,rate;
+    printf("Type the deposit amount: ");
+    scanf("%f",&deposit);
+    printf("Type the monthly interest rate %%: ");
+    scanf("%f",&rate);
+    rate/=100;
+    printf("After a year deposit amount will grow to: %.2f\n",deposit+deposit*rate*12);
     return 0;
 }

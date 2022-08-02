@@ -5,11 +5,11 @@ int main()
 {
     int a;
     float j;
-    printf("dose thetiko akeraio: ");
+    printf("Type a positive integer: ");
     scanf("%d",&a);
     a=a+50;
     j=(float)a/100;
     a=(int)j*100;
-    printf("stoggylos einai: %d\n",a);
+    printf("Rounded number is: %d\n",a);
     return 0;
 }

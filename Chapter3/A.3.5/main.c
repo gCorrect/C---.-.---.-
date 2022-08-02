@@ -3,15 +3,15 @@
 
 int main()
 {
-    int arithmos_piatwn,arithmos_pothriwn;
-    float prc_piatwn,prc_pothriwn,poso;
-    printf("dose arithmo piatwn kai thn timh tou enos: \n");
-    scanf("%d%f",&arithmos_piatwn,&prc_piatwn);
-    printf("dose arithmo pothriwn kai thn timh tou enos: \n");
-    scanf("%d%f",&arithmos_pothriwn,&prc_pothriwn);
-    printf("dose to poso: \n");
-    scanf("%f",&poso);
+    int plates, glasses;
+    float prc_plates,prc_glasses,payment;
+    printf("Type number of plates and the price of single one: \n");
+    scanf("%d%f",&plates,&prc_plates);
+    printf("Type number of glasses and the price of single one: \n");
+    scanf("%d%f",&glasses,&prc_glasses);
+    printf("Type the payment amount: \n");
+    scanf("%f",&payment);
 
-    printf("ta resta tou einai: %0.2f\n",poso-(arithmos_piatwn*prc_piatwn)-(arithmos_pothriwn*prc_pothriwn));
+    printf("The change is: %0.2f\n",payment-(plates*prc_plates)-(glasses*prc_glasses));
     return 0;
 }

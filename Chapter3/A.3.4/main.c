@@ -3,9 +3,15 @@
 
 int main()
 {
-    int epit,apot;
-    printf("dose epityxontes ki apotyxontes : ");
-    scanf("%d%d",&epit,&apot);
-    printf("success rate: %.2f\nfail rate: %.2f",(float)epit/(epit+apot)*100,(float)apot/(epit+apot)*100);
+    int success, fail, n ;
+    float success_rate, fail_rate;
+    printf("Type number of successes and fails respectively : \n");
+    scanf("%d%d", &success, &fail);
+    
+    n = success + fail;
+    success_rate = (float)success/(n)*100;
+    fail_rate = (float)fail/(n)*100;
+    
+    printf("success rate: %.2f %%\nfail rate: %.2f %%",success_rate,fail_rate);
     return 0;
 }

@@ -5,11 +5,11 @@ int main()
 {
     int a;
     float b,sum;
-    printf("dose mou akeraio\n");
+    printf("Give me an integer: \n");
     scanf("%d",&a);
-    printf("dose mou pragmatiko\n");
+    printf("Give me a float\n");
     scanf("%f",&b);
     sum=a+b;
-    printf("to triplasio tou athrismatos einai %.2f",3*sum);
+    printf("Multiply 3 times their sum equals: %.2f",3*sum);
     return 0;
 }

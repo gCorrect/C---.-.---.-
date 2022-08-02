@@ -3,10 +3,10 @@
 
 int main()
 {
-    int hl_patera,hl_paidi,x;
-    printf("dose hlikia patera kai paidiou ");
-    scanf("%d%d",&hl_patera,&hl_paidi);
-    x=hl_patera-2*hl_paidi;/*hl_patera+x=2(hl_paidi+x) ->x=hl_patera-2*hl_paidi*/
-    printf("Tha ginei se %d xronia kai o pateras tha einai %d kai to paidi tha einai %d\n",x,hl_patera+x,hl_paidi+x);
+    int father_age,child_age,x;
+    printf("Type ages of the father and the child repsectively: ");
+    scanf("%d%d",&father_age,&child_age);
+    x=father_age-2*child_age;/*father_age+x=2(child_age+x) -> x=father_age-2*child_age*/
+    printf("Father will double age his child in: %d years.\nThe age of the father will be :%d \nThe age of the child will be: %d\n",x,father_age+x,child_age+x);
     return 0;
 }

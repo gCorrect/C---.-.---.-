@@ -6,7 +6,6 @@ int main()
     int x=21, y = 0xa, z = 077;
 
     printf("%d\n",x);
-    printf(" %d\n",x);
     printf("%d\n",x-6);
     printf("%d%%\n",x+4);
     printf("%X\n",y);
